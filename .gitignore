@@ -1,0 +1,30 @@
+# Terraform state files (contain sensitive info like IPs and resource IDs)
+*.tfstate
+*.tfstate.*
+
+# Terraform state backup
+*.tfstate.backup
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Terraform variable files that may contain secrets
+# terraform.tfvars        ← COMMITTED intentionally (contains only resource IDs, no secrets)
+*.auto.tfvars
+
+# Terraform lock file (optional — some teams commit this, some don't)
+# .terraform.lock.hcl
+
+# Terraform provider plugins (downloaded during terraform init)
+.terraform/
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# OS files
+.DS_Store
+Thumbs.db
